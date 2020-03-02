@@ -1,4 +1,40 @@
 body {
-    /*margin: 0;*/
+    margin: 0;
     /*background-color: #000;*/
+}
+
+.startBox {
+    height: 70vh;
+    width: 100%;
+    background-image: url(../images/headerPortfolio.png);
+    background-size: cover;
+}
+
+.startBox-nav,
+.startBox-info {
+    display: flex;
+}
+
+.startBox-nav {
+    height: 10vh;
+    align-content: center;
+    justify-content: flex-end
+}
+
+.startBox-nav-ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.startBox-info {
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center; /*alinea en vertical*/
+    align-items: center; /*alinea en horizontal*/
+}
+.startBox-info-image {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
 }
