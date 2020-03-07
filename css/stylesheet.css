@@ -7,10 +7,23 @@ body {
     font-family: 'Monserrat', sans-serif;
     height: 70vh;
     width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+       }
+
+   .startBox:after {
+    content: '';
+    position: absolute;
     background-image: url(../images/headerPortfolio.png);
     background-size: cover;
-    /*color: #fff;*/
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(5px);
+    /*filter: brightness(80%);*/
+   }
 
 .startBox-nav,
 .startBox-info {
@@ -61,8 +74,11 @@ body {
     /*margin: 70px 0 0 -37px;*/
     width: 120px;
     height: 120px;
-    transform: scale(1.3);
+    /*transform: scale(1.3);*/
     border-radius: 200px;
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(89,86,89,1);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(89,86,89,1);
+    box-shadow: 3px 4px 5px 0px rgba(89,86,89,1);
     
 }
 
@@ -73,25 +89,37 @@ body {
 }
 
 .startBox-info-name {
+    margin-top: 5px;
     margin-bottom: 0;
+    font-size: 24px;
 }
 
 .startBox-info-carrer {
     margin: 5px 0 5px 0;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 .startBox-info-develop {
     border: 3px solid #fff;
     padding: 8px;
-    width: 200px;
-    border-radius: 4px;
-    text-align: center;
+    width: 300px;
+    height: 25px;
+    border-radius: 12px;
+    /*text-align: center;*/
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin:  15px 0 20px 0;
 }
 
 .startBox-info-contactButton {
+    
     border-radius: 20px;
     border: none;
-    height: 51px;
+    height: 40px;
     width: 216px;
     background-color: #35c8f9;
     color: #fff;
@@ -99,4 +127,5 @@ body {
     font-family: 'Monserrat', sans-serif;
     font-weight: 600;
     cursor: pointer;
+    font-size: 18px;
 }
