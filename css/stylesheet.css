@@ -153,4 +153,38 @@ body {
     padding: 0 10% 0 10%;
     font-size: 18px;
 }
+/*portfolio section*/
 
+.portfolio-box-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Monserrat', sans-serif;
+
+}
+
+.portfolio-box-titles-portfolio {
+    color: #35c8f9;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 5% 0 0 0;
+}
+.portfolio-box-titles-jobs {
+    color: #9b9b9b;
+    font-size: 18px;
+    margin-top: 8;
+}
+
+.portfolio-box-images {
+    display: flex;
+    padding: 0 10% 0 10%;
+    justify-content: space-between;
+}
+
+.portfolio-box-image {
+    position: relative;
+    float: left; /*floatan a la izquierda y se vuelven de la misma altura*/
+    width: 380px;
+    height: 300px;
+}
