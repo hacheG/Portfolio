@@ -4,10 +4,12 @@ body {
 }
 
 .startBox {
+    font-family: 'Monserrat', sans-serif;
     height: 70vh;
     width: 100%;
     background-image: url(../images/headerPortfolio.png);
     background-size: cover;
+    /*color: #fff;*/
 }
 
 .startBox-nav,
@@ -15,15 +17,30 @@ body {
     display: flex;
 }
 
+
 .startBox-nav {
     height: 10vh;
     align-content: center;
-    justify-content: flex-end
+    justify-content: flex-end;
+    margin-right: 10%;
 }
 
 .startBox-nav-ul {
     list-style-type: none;
     display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.startBox-nav-ul-li {
+    color: #fff;
+    transition: all 0.3s ease;
+    font-weight: 600; 
+}
+
+.startBox-nav-ul-li:hover {
+    color: #35c8f9;
+    cursor: pointer;
 }
 
 .startBox-info {
@@ -32,9 +49,54 @@ body {
     justify-content: center; /*alinea en vertical*/
     align-items: center; /*alinea en horizontal*/
 }
+/*
+.startBox-info-imageBox {
+    width: 150px;
+    height: 150px;
+    overflow: hidden; para hacer un marco que no deje ver lo que se sale de el
+    /*border-radius: 85%;
+}
+*/
 .startBox-info-image {
-
+    /*margin: 70px 0 0 -37px;*/
     width: 120px;
     height: 120px;
+    transform: scale(1.3);
     border-radius: 200px;
+    
+}
+
+.startBox-info-name,
+.startBox-info-carrer,
+.startBox-info-develop {
+    color: #fff;
+}
+
+.startBox-info-name {
+    margin-bottom: 0;
+}
+
+.startBox-info-carrer {
+    margin: 5px 0 5px 0;
+}
+
+.startBox-info-develop {
+    border: 3px solid #fff;
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.startBox-info-contactButton {
+    border-radius: 20px;
+    border: none;
+    height: 51px;
+    width: 216px;
+    background-color: #35c8f9;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
 }
