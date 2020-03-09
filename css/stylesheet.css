@@ -185,6 +185,58 @@ body {
 .portfolio-box-image {
     position: relative;
     float: left; /*floatan a la izquierda y se vuelven de la misma altura*/
-    width: 380px;
+    width: 300px;
     height: 300px;
+    cursor: pointer;
+}
+
+.portfolio-box-images-imagesBox {
+    position: relative;
+    font-family: 'Monserrat', sans-serif;
+    color: #fff;
+    
+}
+
+.portfolio-box-images-imagesBox:hover .overlay{
+    /*cuando se haga hover se active .overlay*/
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: #35c8f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.overlay > div > h4,
+.overlay > div > p {
+    font-size: 24px;
+}
+
+/*sin el > es lo mismo*/
+
+.overlay  div  button {
+    /*border: none;*/
+    border-radius: 20px;
+    width: 180px;
+    height: 38px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+
 }
