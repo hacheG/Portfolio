@@ -84,17 +84,21 @@ body {
 
 .startBox-info-name,
 .startBox-info-carrer,
-.startBox-info-develop {
+.startBox-info-develop,
+.footerBox-titleBox-title,
+.footerBox-titleBox-subtitle {
     color: #fff;
 }
 
-.startBox-info-name {
+.startBox-info-name,
+.footerBox-titleBox-title {
     margin-top: 5px;
     margin-bottom: 0;
     font-size: 24px;
 }
 
-.startBox-info-carrer {
+.startBox-info-carrer,
+.footerBox-titleBox-subtitle {
     margin: 5px 0 5px 0;
     font-size: 18px;
     font-weight: 100;
@@ -115,7 +119,8 @@ body {
     margin:  15px 0 20px 0;
 }
 
-.startBox-info-contactButton {
+.startBox-info-contactButton,
+.contactBox-formBox-secondRow-button {
     
     border-radius: 20px;
     border: none;
@@ -239,4 +244,87 @@ body {
     font-size: 18px;
     cursor: pointer;
 
+}
+
+.contactBox {
+    margin-top: 8%;
+    background-color:  #455a64;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 5%;
+}
+
+.contactBox-titleBox {
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;
+    
+    
+}
+
+.contactBox-titleBox-title {
+    color: #35c8f9;
+    margin-top: 0;
+}
+
+.contactBox-titleBox-subtitle {
+    color: #fff;
+    margin-top: 8px;
+}
+
+.contactBox-formBox-firstRow,
+.contactBox-formBox-secondRow {
+    display: flex;
+    align-items: center;
+}
+
+.contactBox-formBox-firstRow {
+    justify-content: space-around;
+    padding: 0 10% 0 10%;
+    margin-bottom: 3%;
+}
+.contactBox-formBox-secondRow {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contactBox-formBox-secondRow-button {
+    margin-top: 3%;
+}
+
+.contactBox-formBox-firstRow > input, /*el elemento input que este adentro de firtsRow*/
+.contactBox-formBox-secondRow-input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #37474f;
+    color: #fff;
+    font-family: 'Monserrat', sans-serif;
+    padding: 2px 4px 6px 4px;
+    font-size: 18px;
+    transition: .3s ease;
+}
+
+.contactBox-formBox-firstRow > input:focus, /*el elemento input que este adentro de firtsRow*/
+.contactBox-formBox-secondRow-input:focus {
+    outline: none;
+    border-bottom-color: #35c8f9;
+}
+
+.contactBox-formBox-firstRow > input::placeholder, /*el elemento input que este adentro de firtsRow*/
+.contactBox-formBox-secondRow-input::placeholder {
+    color: #fff;
+}
+ /*footer*/
+footer {
+    background-color: #37474f;
+    padding: 3% 0 3% 0;
+    font-family: 'Monserrat', sans-serif;
+}
+
+.footerBox{
+    text-align: center;
+}
+
+.footerBox-iconsBox img {
+    width: 5%;
+    height: 5%;
 }
